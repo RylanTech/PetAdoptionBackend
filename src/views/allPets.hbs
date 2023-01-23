@@ -1,0 +1,17 @@
+<h1>PETS!</h1>
+<ul>
+    {{#each petData}}
+    <img width="200px" src={{imgUrl}}/>
+    <li>
+        {{name}} | {{petType}}
+        <br/>
+        <a href="/pets/{{petId}}">View Details</a>
+        <a href="/pets/edit/{{petId}}">Edit Details</a>
+        <form action="/pets/delete/{{petId}}" method="POST">
+            <button type="submit">Adopt! (Remove from list)</button>
+        </form>
+    </li>
+    {{/each}}
+</ul>
+
+<a href="/pets/new">Add Pet</a>

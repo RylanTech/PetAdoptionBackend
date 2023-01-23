@@ -1,0 +1,13 @@
+<ul>
+    {{#with foundPet}}
+    <h1>{{name}}</h1>
+    <p>{{petType}}</p>
+    <p>Id: {{petId}}</p>
+    <p>Here since: {{createdAt}}</p>
+    <p>Description: <br/> {{description}}</p>
+    <img width="500px" src={{imgUrl}}/>
+    {{/with}}
+    <br/>
+    <br/>
+    <a href="/pets">Back</a>
+</ul>
